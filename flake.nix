@@ -19,17 +19,29 @@
 			inherit system;
 		};
 	in {
-		packages.default = pkgs.stdenv.mkDerivation {
-			name = "taugoust.com";
-			src = self;
+		packages = rec {
+			published = pkgs.stdenv.mkDerivation {
+				name = "taugoust.com";
+				src = self;
 
-			buildPhase = ''
-				mkdir -p themes/poison
-				cp -r ${hugo-poison-theme}/* themes/poison
-				${pkgs.hugo}/bin/hugo
-			'';
+				buildPhase = ''
+					mkdir -p themes/poison
+					cp -r ${hugo-poison-theme}/* themes/poison
+					${pkgs.hugo}/bin/hugo
+				'';
 
-			installPhase = "cp -r public $out";
+				installPhase = "cp -r public $out";
+			};
+
+			drafts = published.overrideAttrs (old: {
+				buildPath = ''
+					mkdir -p themes/poison
+					cp -r ${hugo-poison-theme}/* themes/poison
+					${pkgs.hugo}/bin/hugo -D
+				'';
+			});
+
+			default = published;
 		};
 
 		apps.default = utils.lib.mkApp {
