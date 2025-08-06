@@ -1,6 +1,6 @@
 +++
 date = '2025-08-06T11:03:02+02:00'
-draft = true
+draft = false
 title = 'My First Post'
 +++
 ## Starting a Blog

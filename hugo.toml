@@ -5,8 +5,9 @@ theme = 'poison'
 
 # Basic Poison theme configuration
 [params]
+	# Sidebar content
     brand = "Theofilos Augoustis" 
-    # brand_image = "/images/test.jpg"  # path to the image shown in the sidebar
+    brand_image = "/images/profile-pic.png"
     description = "PhD Student @ Technical University of Munich"
     dark_mode = true                    # optional - defaults to false
 
