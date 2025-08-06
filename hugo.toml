@@ -22,7 +22,7 @@ pagerSize = 10
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 5},
+        {Name = "Posts", URL = "/posts/", HasChildren = false},
     ]
 
     # Links to socials
