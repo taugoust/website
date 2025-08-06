@@ -52,8 +52,14 @@
 			drv = pkgs.hugo;
 		};
 
-		devShells.default = pkgs.mkShell {
+		devShells.default = pkgs.mkShellNoCC {
 			buildInputs = [ pkgs.hugo ];
+
+			# Link theme
+			shellHook = ''
+				mkdir -p themes
+				ln -snf "${hugo-poison-theme}" themes/poison
+			'';
 		};
 	});
 }
