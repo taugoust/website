@@ -1,7 +1,10 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://localhost'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Personal Webpage'
 theme = 'poison'
+pluralizelisttitles = true
+
+pagerSize = 10
 
 # Basic Poison theme configuration
 [params]
@@ -19,7 +22,7 @@ theme = 'poison'
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+        {Name = "Posts", URL = "/posts/", HasChildren = true, Limit = 5},
     ]
 
     # Links to socials
