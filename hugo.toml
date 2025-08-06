@@ -23,6 +23,7 @@ pagerSize = 10
     menu = [
         {Name = "About", URL = "/about/", HasChildren = false},
         {Name = "Posts", URL = "/posts/", HasChildren = false},
+        {Name = "Teaching", URL = "/teaching/", HasChildren = false},
     ]
 
     # Links to socials
