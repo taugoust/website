@@ -9,7 +9,7 @@ theme = 'poison'
     brand = "Theofilos Augoustis" 
     brand_image = "/images/profile-pic.png"
     description = "PhD Student @ Technical University of Munich"
-    dark_mode = true                    # optional - defaults to false
+    dark_mode = false
 
     # MENU PLACEHOLDER
     # Menu dict keys:
