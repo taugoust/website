@@ -22,16 +22,14 @@ theme = 'poison'
         {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
     ]
 
-    # Links to your socials.  Delete any you don't need/use. 
-    github_url = "https://github.com"
-    linkedin_url = "https://linkedin.com"
-    twitter_url = "https://twitter.com"
-    mastodon_url = "https://mastodon.social"
-    tryhackme_url = "https://tryhackme.com"
-    discord_url = "https://discord.com"
-    youtube_url = "https://youtube.com"
-    instagram_url = "https://instagram.com"
-    facebook_url = "https://facebook.com"
+    # Links to socials
+    github_url = "https://github.com/taugoust"
+    linkedin_url = "https://linkedin.com/in/theofilos-augoustis-2b901b164"
+	email_url = "mailto://theofilos.augoustis@gmail.com"
+
+	# Enable RSS
+	rss_icon = true
+	rss_section = "posts"
 
     # Hex colors for your sidebar.
     sidebar_bg_color = "#202020"            # default is #202020
