@@ -30,7 +30,11 @@
 					${pkgs.hugo}/bin/hugo
 				'';
 
-				installPhase = "cp -r public $out";
+				installPhase = ''
+					cp -r public $out
+					cp -r themes $out
+					cp hugo.toml $out
+				'';
 			};
 
 			drafts = published.overrideAttrs (old: {
