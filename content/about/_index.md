@@ -4,7 +4,7 @@ draft = false
 title = 'About'
 layout = 'single'
 +++
-I am a PhD student in the [Systems Research Group](https://dse.in.tum.de/) supervised by [Prof.
+I am a PhD student in the [Systems Research Group](https://dse.in.tum.de/) supervised by [prof.
 Pramod Bhatotia](https://dse.in.tum.de/bhatotia/) at the [Technische Universität
 München](https://www.tum.de/en/). My primary interests include compilers, programming languages and
 operating systems.
@@ -13,7 +13,7 @@ operating systems.
 
 I completed my Masters thesis in Informatics at the [Technische Universität
 München](https://www.cit.tum.de/en/cit/home/), advised by [Sebastian
-Reimers](https://sebastian-reimers.github.io/) and supervised by [Prof. Pramod
+Reimers](https://sebastian-reimers.github.io/) and supervised by [prof. Pramod
 Bhatotia](https://dse.in.tum.de/bhatotia/). My thesis topic was the implementation of an **Arm
 backend for a Hybrid Binary Translator (HBT)**.
 
