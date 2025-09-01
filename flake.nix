@@ -18,7 +18,7 @@
 		pkgs = import nixpkgs {
 			inherit system;
 		};
-	in {
+	in rec {
 		packages = rec {
 			published = pkgs.stdenv.mkDerivation {
 				name = "taugoust.com";
@@ -26,7 +26,7 @@
 
 				buildPhase = ''
 					mkdir -p themes/poison
-					cp -r ${hugo-poison-theme}/* themes/poison
+					cp -r ${hugo-poison-theme}/. themes/poison
 					${pkgs.hugo}/bin/hugo
 				'';
 
@@ -38,18 +38,18 @@
 			};
 
 			drafts = published.overrideAttrs (old: {
-				buildPath = ''
+				buildPhase = ''
 					mkdir -p themes/poison
-					cp -r ${hugo-poison-theme}/* themes/poison
+					cp -r ${hugo-poison-theme}/. themes/poison
 					${pkgs.hugo}/bin/hugo -D
 				'';
 			});
 
-			default = published;
+			default = drafts;
 		};
 
 		apps.default = utils.lib.mkApp {
-			drv = pkgs.hugo;
+			drv = pkgs.writeShellScriptBin "pages" "${pkgs.python312}/bin/python3 -m http.server 8000 -d ${packages.default}";
 		};
 
 		devShells.default = pkgs.mkShellNoCC {

@@ -1,4 +1,4 @@
-baseURL = 'http://localhost'
+baseURL = 'https://taugoust.github.io/website/'
 languageCode = 'en-us'
 title = 'Personal Webpage'
 theme = 'poison'
