@@ -17,7 +17,7 @@ Reimers](https://sebastian-reimers.github.io/) and supervised by [Prof. Pramod
 Bhatotia](https://dse.in.tum.de/bhatotia/). My thesis topic was the implementation of an **Arm
 backend for a Hybrid Binary Translator (HBT)**.
 
-Prior to that, I was an AI software engineer within the CCG group at Intel Corporation. There, I
+Prior to that, I worked as a software engineer within the CCG group at Intel Corporation. There, I
 worked on the AI model compiler underlying the Intel VPU platform for inference, while also
 providing support for customers integrating Intel technology within their own products.
 
